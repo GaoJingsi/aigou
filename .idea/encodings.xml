@@ -6,9 +6,13 @@
     <file url="file://$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou_config_server_1299" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou_eureka_server_7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou_mp_generated" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou_plat_parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou_plat_parent/aigou_plat_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou_plat_parent/aigou_plat_service_8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou_product_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou_zuul_server_9527" charset="UTF-8" />
   </component>
 </project>

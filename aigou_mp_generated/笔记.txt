@@ -1,0 +1,11 @@
+使用mp根据数据库表生成:domain,mapper,xml,servic,serviceimpl,controller,query
+1:pom依赖:
+
+2:配置文件:
+
+
+
+3:模板
+
+4:生成代码
+

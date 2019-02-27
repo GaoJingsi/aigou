@@ -6,10 +6,14 @@
       <module fileurl="file://$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/aigou_basic_util.iml" filepath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/aigou_basic_util.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_config_server_1299/aigou_config_server_1299.iml" filepath="$PROJECT_DIR$/aigou_config_server_1299/aigou_config_server_1299.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_eureka_server_7001/aigou_eureka_server_7001.iml" filepath="$PROJECT_DIR$/aigou_eureka_server_7001/aigou_eureka_server_7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aigou_mp_generated/aigou_mp_generated.iml" filepath="$PROJECT_DIR$/aigou_mp_generated/aigou_mp_generated.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_parent.iml" filepath="$PROJECT_DIR$/aigou_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_plat_parent/aigou_plat_interface/aigou_plat_interface.iml" filepath="$PROJECT_DIR$/aigou_plat_parent/aigou_plat_interface/aigou_plat_interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_plat_parent/aigou_plat_parent.iml" filepath="$PROJECT_DIR$/aigou_plat_parent/aigou_plat_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_plat_parent/aigou_plat_service_8001/aigou_plat_service_8001.iml" filepath="$PROJECT_DIR$/aigou_plat_parent/aigou_plat_service_8001/aigou_plat_service_8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/aigou_product_interface.iml" filepath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/aigou_product_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_parent.iml" filepath="$PROJECT_DIR$/aigou_product_parent/aigou_product_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/aigou_product_service_8002.iml" filepath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/aigou_product_service_8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou_zuul_server_9527/aigou_zuul_server_9527.iml" filepath="$PROJECT_DIR$/aigou_zuul_server_9527/aigou_zuul_server_9527.iml" />
     </modules>
   </component>

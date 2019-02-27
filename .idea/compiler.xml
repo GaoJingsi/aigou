@@ -9,8 +9,11 @@
         <module name="aigou_basic_util" />
         <module name="aigou_config_server_1299" />
         <module name="aigou_eureka_server_7001" />
+        <module name="aigou_mp_generated" />
         <module name="aigou_plat_interface" />
         <module name="aigou_plat_service_8001" />
+        <module name="aigou_product_interface" />
+        <module name="aigou_product_service_8002" />
         <module name="aigou_zuul_server_9527" />
       </profile>
     </annotationProcessing>
@@ -19,10 +22,14 @@
       <module name="aigou_basic_util" target="1.8" />
       <module name="aigou_config_server_1299" target="1.8" />
       <module name="aigou_eureka_server_7001" target="1.8" />
+      <module name="aigou_mp_generated" target="1.8" />
       <module name="aigou_parent" target="1.8" />
       <module name="aigou_plat_interface" target="1.8" />
       <module name="aigou_plat_parent" target="1.8" />
       <module name="aigou_plat_service_8001" target="1.8" />
+      <module name="aigou_product_interface" target="1.8" />
+      <module name="aigou_product_parent" target="1.8" />
+      <module name="aigou_product_service_8002" target="1.8" />
       <module name="aigou_zuul_server_9527" target="1.8" />
     </bytecodeTargetLevel>
   </component>
