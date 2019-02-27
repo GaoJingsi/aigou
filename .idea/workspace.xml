@@ -2,58 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c063aa70-3316-43ed-b5b8-56dc43bdb5d8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generate_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_support_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_engine_core_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/query/BaseQuery.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/BitStatesUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/ClassUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/CodeGenerateUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/LetterUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/PageList.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/ProductStateConsts.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/PropertiesHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/StrUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/encrypt/DES.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_basic_parent/aigou_basic_util/src/main/java/cn/itsource/aigou/util/encrypt/MD5.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/aigou_mp_generated.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/src/main/java/cn/itsource/GenteratorCode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/src/main/resources/gen.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/src/main/resources/templates/controller.java.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/src/main/resources/templates/query.java.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_mp_generated/笔记.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/aigou_product_interface.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/笔记.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_parent.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/aigou_product_service_8002.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/java/cn/itsource/aigou/ProductServiceApplication_8002.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/java/cn/itsource/aigou/config/MybatisPlusConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/java/cn/itsource/aigou/config/Swagger2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/resources/application.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/笔记.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_zuul_server_9527/src/main/java/cn/itsource/aigou/config/GlobalCorsConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_zuul_server_9527/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/src/main/java/cn/itsource/aigou/domain/Brand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/src/main/java/cn/itsource/aigou/domain/Product.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/src/main/java/cn/itsource/aigou/domain/ProductType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/src/main/java/cn/itsource/aigou/query/BrandQuery.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/src/main/java/cn/itsource/aigou/query/ProductQuery.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_interface/src/main/java/cn/itsource/aigou/query/ProductTypeQuery.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/resources/cn/itsource/aigou/mapper/BrandMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/resources/cn/itsource/aigou/mapper/ProductMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/resources/cn/itsource/aigou/mapper/ProductTypeMapper.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/aigou_zuul_server_9527/src/main/resources/bootstrap.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,8 +62,8 @@
       <file leaf-file-name="ProductTypeServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/java/cn/itsource/aigou/service/impl/ProductTypeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+            <state relative-caret-position="91">
+              <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -246,6 +204,486 @@
             <path>
               <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_basic_util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_mp_generated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_plat_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou_product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="itsource" type="462c0819:PsiDirectoryNode" />
+              <item name="aigou" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -500,7 +938,7 @@
       <workItem from="1551180490607" duration="1181000" />
       <workItem from="1551183230879" duration="333000" />
       <workItem from="1551183666114" duration="1676000" />
-      <workItem from="1551228737756" duration="21573000" />
+      <workItem from="1551228737756" duration="21797000" />
     </task>
     <task id="LOCAL-00001" summary="你要我写的">
       <created>1550979109693</created>
@@ -516,11 +954,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551142709785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第二天">
+      <created>1551265377530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551265377531</updated>
+    </task>
+    <task id="LOCAL-00004" summary="第四天">
+      <created>1551265522816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551265522816</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53444000" />
+    <option name="totallyTimeSpent" value="53668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -608,7 +1060,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="你要我写的" />
     <MESSAGE value="第二天" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二天" />
+    <MESSAGE value="第四天" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四天" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1054,8 +1507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aigou_product_parent/aigou_product_service_8002/src/main/java/cn/itsource/aigou/service/impl/ProductTypeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="91">
+          <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding />
         </state>
       </provider>
