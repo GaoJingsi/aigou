@@ -16,6 +16,7 @@
         <module>aigou_plat_parent</module>
         <module>aigou_product_parent</module>
         <module>aigou_mp_generated</module>
+        <module>aigou_common_parent</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

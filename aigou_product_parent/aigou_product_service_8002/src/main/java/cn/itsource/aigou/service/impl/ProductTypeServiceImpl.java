@@ -1,14 +1,19 @@
 package cn.itsource.aigou.service.impl;
 
+import cn.itsource.aigou.client.PageStaticClient;
+import cn.itsource.aigou.client.RedisClient;
+import cn.itsource.aigou.constants.GlobelConstants;
 import cn.itsource.aigou.domain.ProductType;
 import cn.itsource.aigou.mapper.ProductMapper;
 import cn.itsource.aigou.mapper.ProductTypeMapper;
 import cn.itsource.aigou.service.IProductTypeService;
+import com.alibaba.fastjson.JSONArray;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,15 +34,50 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
     @Autowired
     private ProductTypeMapper productTypeMapper;
 
+    //注入RedisClient:
+    @Autowired
+    private RedisClient redisClient;
+
+
+    @Autowired
+    private PageStaticClient pageStaticClient;
+
+
     /**
      * @return
      */
-    @Override
+   /* @Override
     public List<ProductType> treeData() {
             // 要得到name和儿子
 
         //return treeDataRecursion(0L);
         return treeDataLoop();
+
+    }*/
+
+    @Override
+    public List<ProductType> treeData() {
+        //先根据key,从redis获取:我是producttype的服务提供者,我要调用公共服务的redis,则是redis的消费者:
+        //java内部的服务的调用,就应该使用feign或者ribbon:选中feign:
+        //feign的使用:是在消费者,注入接口,就象调用本地接口一样
+
+        //判断是否有结果:有就直接返回,没有就从数据库获取,存入redis,并返回
+        String jsonArrStr = redisClient.get(GlobelConstants.REDIS_PRODUCTTYPE_KEY);
+        if(StringUtils.isEmpty(jsonArrStr)){
+            //没有就从数据库获取,存入redis,并返回
+            List<ProductType> productTypes = treeDataLoop();
+            jsonArrStr= JSONArray.toJSONString(productTypes);
+            //redis存入
+            redisClient.set(GlobelConstants.REDIS_PRODUCTTYPE_KEY,jsonArrStr );
+            System.out.println("from========db===============");
+            return productTypes;
+        }else{
+            //有:有就直接返回
+            //json的数组字符串--->json数组
+            System.out.println("from========cache===============");
+            return JSONArray.parseArray(jsonArrStr, ProductType.class);
+        }
+
     }
 
     /**
@@ -132,4 +172,41 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
     }
 
 
+    @Override
+    public boolean updateById(ProductType entity) {
+        //修改:本身数据的修改不会变;修改完后,重新生成模板:
+        //1:数据修改:
+        boolean b = super.updateById(entity);
+
+        //2:模板的生成:此时此时,这个是模板的消费者:消费模板的提供者:
+        //这个是java后台内部的服务的消费:feign/ribbon(采纳feign)
+        //feign:注入模板接口,调用
+
+        //逻辑实现:
+        //2.1:先生成改变数据的html页面:productType
+        Map<String,Object> mapProductType=new HashMap<>();
+        List<ProductType> productTypes = treeDataLoop();
+        mapProductType.put(GlobelConstants.PAGE_MODE, productTypes);//这里页面需要的是所有的产品类型数据
+        //哪一个模板
+        mapProductType.put(GlobelConstants.PAGE_TEMPLATE, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\product.type.vm");
+        //根据模板生成的页面的地址:
+        mapProductType.put(GlobelConstants.PAGE_TEMPLATE_HTML, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\product.type.vm.html");
+
+        pageStaticClient.getPageStatic(mapProductType);
+
+        //2.2:再生成home的html页面:
+        Map<String,Object> mapHome=new HashMap<>();
+        //数据:$model.staticRoot
+        Map<String,String> staticRootMap=new HashMap<>();
+        staticRootMap.put("staticRoot", "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\");
+        mapHome.put(GlobelConstants.PAGE_MODE, staticRootMap);//这里页面需要的是目录的根路径
+        //哪一个模板
+        mapHome.put(GlobelConstants.PAGE_TEMPLATE, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\home.vm");
+        //根据模板生成的页面的地址:
+        mapHome.put(GlobelConstants.PAGE_TEMPLATE_HTML, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\home.html");
+
+        pageStaticClient.getPageStatic(mapHome);
+
+        return b;
+    }
 }

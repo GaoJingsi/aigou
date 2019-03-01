@@ -17,5 +17,7 @@ zuul:
   #产品的服务路由:
     aigouProduct.serviceId: aigou-product
     aigouProduct.path: /product/**
+    aigouCommon.serviceId: common-privoder
+    aigouCommon.path: /common/**
   ignored-services: "*" #user-provider #忽略直接使用服务名访问  *忽略所有的
   prefix: /aigou   # 访问前缀

@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="aigou_basic_util" />
+        <module name="aigou_common_interface" />
+        <module name="aigou_common_service" />
         <module name="aigou_config_server_1299" />
         <module name="aigou_eureka_server_7001" />
         <module name="aigou_mp_generated" />
@@ -20,6 +22,9 @@
     <bytecodeTargetLevel>
       <module name="aigou_basic_parent" target="1.8" />
       <module name="aigou_basic_util" target="1.8" />
+      <module name="aigou_common_interface" target="1.8" />
+      <module name="aigou_common_parent" target="1.8" />
+      <module name="aigou_common_service" target="1.8" />
       <module name="aigou_config_server_1299" target="1.8" />
       <module name="aigou_eureka_server_7001" target="1.8" />
       <module name="aigou_mp_generated" target="1.8" />

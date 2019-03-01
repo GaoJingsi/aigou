@@ -1,1 +1,6 @@
 controller,service,serviceimpl,mapper,mapperxml,分页配置
+
+
+redis的项目实战:
+ 在查询分类的树状结构的时候,加入redis:
+ service:treeData方法:
