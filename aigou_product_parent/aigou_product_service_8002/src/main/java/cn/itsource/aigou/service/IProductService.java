@@ -1,6 +1,8 @@
 package cn.itsource.aigou.service;
 
 import cn.itsource.aigou.domain.Product;
+import cn.itsource.aigou.query.ProductQuery;
+import cn.itsource.aigou.util.PageList;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IProductService extends IService<Product> {
 
+    PageList<Product> selectQuery(ProductQuery query);
 }

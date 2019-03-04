@@ -81,8 +81,11 @@ public class ProductController {
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     public PageList<Product> json(@RequestBody ProductQuery query)
     {
-        Page<Product> page = new Page<Product>(query.getPage(),query.getRows());
+        //自己的关联查询:
+        /*Page<Product> page = new Page<Product>(query.getPage(),query.getRows());
             page = productService.selectPage(page);
-            return new PageList<Product>(page.getTotal(),page.getRecords());
+            return new PageList<Product>(page.getTotal(),page.getRecords());*/
+
+       return  productService.selectQuery(query);
     }
 }

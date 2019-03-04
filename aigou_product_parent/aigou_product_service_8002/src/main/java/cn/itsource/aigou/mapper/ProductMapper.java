@@ -1,7 +1,10 @@
 package cn.itsource.aigou.mapper;
 
 import cn.itsource.aigou.domain.Product;
+import cn.itsource.aigou.query.ProductQuery;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  */
 public interface ProductMapper extends BaseMapper<Product> {
 
+    long queryPageCount(ProductQuery query);
+
+    List<Product> queryPage(ProductQuery query);
 }

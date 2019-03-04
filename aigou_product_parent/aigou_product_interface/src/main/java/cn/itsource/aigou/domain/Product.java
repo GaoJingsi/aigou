@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 
 /**
  * <p>
@@ -41,6 +42,7 @@ public class Product extends Model<Product> {
      */
     @TableField("product_type_id")
     private Long productTypeId;
+
     /**
      * 上架时间
      */
@@ -49,6 +51,9 @@ public class Product extends Model<Product> {
      * 下架时间
      */
     private Long offSaleTime;
+
+    @TableField(exist = false)
+    private String offSaleTimeStr;//只是做时间格式化处理
     @TableField("brand_id")
     private Long brandId;
     /**
@@ -87,6 +92,17 @@ public class Product extends Model<Product> {
     private Integer commonCommentCount;
     private Integer badCommentCount;
 
+    //目的是为了在保存product的时候,传入product_ext的属性进行保存:
+    @TableField(exist = false)
+    private ProductExt productExt;
+
+    public ProductExt getProductExt() {
+        return productExt;
+    }
+
+    public void setProductExt(ProductExt productExt) {
+        this.productExt = productExt;
+    }
 
     public Long getId() {
         return id;
@@ -154,6 +170,21 @@ public class Product extends Model<Product> {
 
     public Long getOffSaleTime() {
         return offSaleTime;
+    }
+
+    //  1491916125039  =>>   2019-06-03 23:23:23 ==>SimpleDataFormatter
+    public String getOffSaleTimeStr() {
+        // offSaleTime
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        if(offSaleTime==null){
+            return null;
+        }else{
+            return sdf.format(offSaleTime);
+        }
+    }
+
+    public void setOffSaleTimeStr(String offSaleTimeStr) {
+        this.offSaleTimeStr = offSaleTimeStr;
     }
 
     public void setOffSaleTime(Long offSaleTime) {
