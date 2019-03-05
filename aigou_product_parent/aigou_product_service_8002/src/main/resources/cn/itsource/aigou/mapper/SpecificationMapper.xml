@@ -6,11 +6,13 @@
     <resultMap id="BaseResultMap" type="cn.itsource.aigou.domain.Specification">
         <id column="id" property="id" />
         <result column="specName" property="specName" />
+        <result column="type" property="type" />
+        <result column="product_type_id" property="productTypeId" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, specName
+        id, specName, type, product_type_id AS productTypeId
     </sql>
 
 </mapper>

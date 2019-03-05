@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author wbtest
- * @since 2019-03-04
+ * @since 2019-03-05
  */
 public interface ISpecificationService extends IService<Specification> {
 
