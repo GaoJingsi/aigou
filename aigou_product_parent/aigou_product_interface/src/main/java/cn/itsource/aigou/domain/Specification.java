@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
@@ -39,6 +41,18 @@ public class Specification extends Model<Specification> {
     //只是用于在添加修改 显示属性的时候,接收值的,与属性表的数据库没有关系
     @TableField(exist = false)
     private String value;
+
+
+    @TableField(exist = false)
+    private List<String> skuValues=new ArrayList<>();
+
+    public List<String> getSkuValues() {
+        return skuValues;
+    }
+
+    public void setSkuValues(List<String> skuValues) {
+        this.skuValues = skuValues;
+    }
 
     public String getValue() {
         return value;

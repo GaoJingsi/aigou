@@ -14,6 +14,7 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -102,6 +103,89 @@ public class ProductController {
 
        return  productService.selectQuery(query);
     }
+    //sku的属性的获取
+
+    /**
+     * sku的属性的获取:
+     * @param productTypeId
+     * @return
+     */
+    @RequestMapping(value = "/skuProperties/{productTypeId}",method = RequestMethod.GET)
+    public List<Specification> skuProperties(@PathVariable("productTypeId") Long productTypeId)
+    {
+        //要判断是新增还是修改: 判断是对当前产品的显示属性是添加还是新增:
+        List<Specification> specifications = getSpecifications(productTypeId,2L);
+       return specifications;
+
+    }
+
+    /**
+     *
+     * let params =
+     * {"productId": productId, "skuProperties": this.skuProperties,"skuDatas":this.skuDatas};
+     *
+     * productId:63
+     skuProperties:
+     [
+     {id=33, specName=颜色, type=2, productTypeId=9, value=null,skuValues=[yellow, green]},
+     {id=34, specName=尺寸, type=2, productTypeId=9, value=null, skuValues=[26, 96]}
+     ]
+
+     skuDatas:
+     [
+     {颜色=yellow, 尺寸=26, price=26, availableStock=26},
+     {颜色=yellow, 尺寸=96, price=96, availableStock=96},
+     {颜色=green, 尺寸=26, price=62, availableStock=62},
+     {颜色=green, 尺寸=96, price=69, availableStock=69}
+     ]
+
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/skuProperties",method = RequestMethod.POST)
+    public AjaxResult saveSkuProperties(@RequestBody  Map<String,Object> map)
+    {
+        try {
+            //目的是更新:t_product_ext的viewProperties
+            //1:接收前台的数据  java.lang.Integer cannot be cast to java.lang.Long
+            Object productId = map.get("productId");
+            System.out.println("productId:"+productId);// productId:63
+            //前台传过来的添加的显示属性的list
+            List<Map<String,Object>> skuProperties = (List<Map<String,Object>>) map.get("skuProperties");// List<>
+            System.out.println("skuProperties:"+skuProperties);
+            // skuDatas
+           List<Map<String,Object>> skuDatas = (List<Map<String, Object>>) map.get("skuDatas");
+            System.out.println("skuDatas:"+skuDatas);
+
+            //调用方法:
+            productService.addSku(productId,skuProperties,skuDatas);
+            return AjaxResult.me().setMsg("显示属性保存成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMsg("显示属性保存失败:"+e.getMessage());
+        }
+
+    }
+
+    /**
+     * 查询属性表的公共抽取
+     * @param productTypeId 商品类型
+     * @param type 显示属性还是sku属性:  type=1  显示属性;type=2  sku属性
+     * @return
+     */
+    private List<Specification> getSpecifications(Long productTypeId,Long type) {
+        //没有就是添加:
+        Wrapper<Specification> wrapper=new EntityWrapper<>();
+        wrapper.eq("product_type_id", productTypeId);
+        wrapper.eq("type", type);
+        // specifications的多个值:
+        List<Specification> specifications = specificationService.selectList(wrapper);
+        for (Specification specification : specifications) {
+            System.out.println(specification);
+        }
+        return specifications;
+    }
+
     //根据产品分类获取这个分类的显示属性:服务是给前台调用:不搞feign
     @RequestMapping(value = "/viewProperties/{productTypeId}/{productId}",method = RequestMethod.GET)
     public List<Specification> viewProperties(@PathVariable("productTypeId") Long productTypeId,
@@ -111,20 +195,14 @@ public class ProductController {
         //productExt表中有viewProperties:修改 :需要前台传productId给我
         ProductExt productExt = productExtService.selectOne(new EntityWrapper<ProductExt>().eq("productId", productId));
 
-        if(productExt!=null&&!productExt.getViewProperties().isEmpty()){
+        //str == null || "".equals(str);
+        if(productExt!=null&& !StringUtils.isEmpty(productExt.getViewProperties())){
             //有显示属性:是修改
             String strArrJson = productExt.getViewProperties();
            return  JSONArray.parseArray(strArrJson, Specification.class);
         }else{
             //没有就是添加:
-            Wrapper<Specification> wrapper=new EntityWrapper<>();
-            wrapper.eq("product_type_id", productTypeId);
-            wrapper.eq("type", 1);
-            // specifications的多个值:
-            List<Specification> specifications = specificationService.selectList(wrapper);
-            for (Specification specification : specifications) {
-                System.out.println(specification);
-            }
+            List<Specification> specifications = getSpecifications(productTypeId,1L);
             //specifications:
             return specifications;
         }
