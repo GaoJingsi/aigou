@@ -86,5 +86,27 @@
         </association>
     </resultMap>
 
+    <!--
+    /*(5,6)*/
+    void updateOnSaleBatch(Map<String,Object> params);-->
+    <update id="updateOnSaleBatch" parameterType="map">
+
+        update  t_product t set  t.onSaleTime=#{onSaleTime} ,t.state = 1
+            where id in
+            <foreach collection="ids" item="m" separator="," close=")" open="(" >
+                #{m}
+            </foreach>
+
+    </update>
+
+    <update id="updateOffSaleBatch" parameterType="map">
+
+        update  t_product t set  t.offSaleTime=#{offSaleTime} ,t.state = 2
+        where id in
+        <foreach collection="ids" item="m" separator="," close=")" open="(" >
+            #{m}
+        </foreach>
+
+    </update>
 
 </mapper>

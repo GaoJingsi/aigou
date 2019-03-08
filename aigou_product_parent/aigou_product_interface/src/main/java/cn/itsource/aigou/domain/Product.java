@@ -92,9 +92,20 @@ public class Product extends Model<Product> {
     private Integer commonCommentCount;
     private Integer badCommentCount;
 
+    // 1111,3333,5555
+    private String medias;
+
     //目的是为了在保存product的时候,传入product_ext的属性进行保存:
     @TableField(exist = false)
     private ProductExt productExt;
+
+    public String getMedias() {
+        return medias;
+    }
+
+    public void setMedias(String medias) {
+        this.medias = medias;
+    }
 
     public ProductExt getProductExt() {
         return productExt;

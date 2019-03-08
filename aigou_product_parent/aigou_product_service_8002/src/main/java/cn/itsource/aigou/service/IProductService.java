@@ -27,4 +27,18 @@ public interface IProductService extends IService<Product> {
      * @param skuDatas  sku的值
      */
     void addSku(Object productId, List<Map<String, Object>> skuProperties, List<Map<String, Object>> skuDatas);
+
+    /**
+     * 上架
+     * @param ids  1,2,3
+     * @param opt 1
+     */
+    void onSale(String ids, Long opt);
+
+    /**
+     * 下架
+     * @param ids  1,2,3
+     * @param opt 2
+     */
+    void offSale(String ids, Long opt);
 }
