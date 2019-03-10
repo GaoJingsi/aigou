@@ -3,10 +3,12 @@ package cn.itsource.aigou.service.impl;
 import cn.itsource.aigou.client.PageStaticClient;
 import cn.itsource.aigou.client.RedisClient;
 import cn.itsource.aigou.constants.GlobelConstants;
+import cn.itsource.aigou.domain.Brand;
 import cn.itsource.aigou.domain.ProductType;
-import cn.itsource.aigou.mapper.ProductMapper;
+import cn.itsource.aigou.mapper.BrandMapper;
 import cn.itsource.aigou.mapper.ProductTypeMapper;
 import cn.itsource.aigou.service.IProductTypeService;
+import cn.itsource.aigou.util.StrUtils;
 import com.alibaba.fastjson.JSONArray;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
@@ -33,6 +35,10 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
 
     @Autowired
     private ProductTypeMapper productTypeMapper;
+
+    @Autowired
+    private BrandMapper brandMapper;
+
 
     //注入RedisClient:
     @Autowired
@@ -79,6 +85,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         }
 
     }
+
 
     /**
      * 使用循环方式:
@@ -137,7 +144,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
      * @return
      */
     private List<ProductType> treeDataRecursion(Long pid) {
-      //treeDataRecursion:获取传入参数的儿子
+        //treeDataRecursion:获取传入参数的儿子
         //获取第一级目录
         List<ProductType> children =  getAllChildren(pid);// [1,100]
 
@@ -152,7 +159,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
             // child: 1
             //查询1的儿子
             List<ProductType> allChildren = treeDataRecursion(child.getId());// 1的儿子:
-           // 把1的儿子给1
+            // 把1的儿子给1
             child.setChildren(allChildren);
 
         }
@@ -168,7 +175,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         // select * from t_product_type where pid= ?????
         Wrapper<ProductType> wrapper = new EntityWrapper<>();
         wrapper.eq("pid", pid); //select * from t_product_type where pid = #{pid}
-       return  productTypeMapper.selectList(wrapper);
+        return  productTypeMapper.selectList(wrapper);
     }
 
 
@@ -201,12 +208,56 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         staticRootMap.put("staticRoot", "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\");
         mapHome.put(GlobelConstants.PAGE_MODE, staticRootMap);//这里页面需要的是目录的根路径
         //哪一个模板
-        mapHome.put(GlobelConstants.PAGE_TEMPLATE, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\home.vm");
+        mapHome.put(GlobelConstants.PAGE_TEMPLATE, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\home.vm.ban");
         //根据模板生成的页面的地址:
-        mapHome.put(GlobelConstants.PAGE_TEMPLATE_HTML, "F:\\idea\\aigou_parent\\aigou_common_parent\\aigou_common_interface\\src\\main\\resources\\template\\home.html");
+        mapHome.put(GlobelConstants.PAGE_TEMPLATE_HTML, "F:\\idea\\aigou-vue-web\\aigou-web\\home.html");
 
         pageStaticClient.getPageStatic(mapHome);
 
         return b;
     }
+
+
+    @Override
+    public List<Map<String, Object>> getCrumbs(Long productTypeId) {
+        List<Map<String, Object>> mapList=new ArrayList<>();
+        //1:通过productTypeId获取到这条数据:  id 3     pid  2  path .1.2.3.
+        ProductType productType = productTypeMapper.selectById(productTypeId);
+
+        //2:获取到所有的层级:path
+        String path = productType.getPath();
+        List<Long> longs = StrUtils.splitStr2LongArr(path, "\\.");// [1,2,3]
+
+        for (Long id : longs) {
+            //2.1:组装每一个对象的自己和他的兄弟姐妹
+            Map<String,Object> map=new HashMap<>();
+            // 1,2,3
+            // 2.1.1:获取到自己
+            ProductType own = productTypeMapper.selectById(id);
+            Long pid = own.getPid();//自己的老子:
+            //2.1.2:找自己的老子的所有的儿子(包含了自己):
+            List<ProductType> productTypeList = productTypeMapper.selectList(new EntityWrapper<ProductType>().eq("pid", pid));
+            for (ProductType productType1 : productTypeList) {
+                //2.1.3:根据id来判断是否是自己:获取自己的兄弟姐妹
+                Long currentId = productType1.getId();
+                if(currentId.longValue()==own.getId().longValue()){
+                    //移除自己
+                    productTypeList.remove(productType1);
+                    break;
+                }
+            }
+            map.put("ownerProductType", own);//自己
+            map.put("otherProductTypes", productTypeList);//自己的兄弟姐妹
+            mapList.add(map);
+        }
+
+        return mapList;
+    }
+
+    @Override
+    public List<Brand> getBrands(Long productTypeId) {
+        //通过分类获取他的所有的品牌:  分类和品牌关系:   1:*
+        return  brandMapper.selectList(new EntityWrapper<Brand>().eq("product_type_id", productTypeId));
+    }
+
 }

@@ -20,6 +20,13 @@ public class StrUtils {
         return null;
     }
 
+    public static String[] splitStr2StrArr(String str,String split) {
+        if (str != null && !str.equals("")) {
+            return str.split(split);
+        }
+        return null;
+    }
+
 
     /**
      * 把逗号分隔字符串转换List的Long
@@ -34,6 +41,27 @@ public class StrUtils {
         List<Long> result = new ArrayList<>();
         for (String string : strings) {
             result.add(Long.parseLong(string));
+        }
+
+        return result;
+    }
+
+    /**
+     * 通过指定的分隔符,把一个字符串分隔为long的list
+     * @param str  需分隔的字符串
+     * @param split 分隔符
+     * @return
+     */
+    public static List<Long> splitStr2LongArr(String str,String split) {
+        String[] strings = splitStr2StrArr(str,split);
+        if (strings == null) return null;
+
+        List<Long> result = new ArrayList<>();
+        for (String string : strings) {
+            if(string!=null&&!string.equals("")){
+                result.add(Long.parseLong(string));
+            }
+
         }
 
         return result;

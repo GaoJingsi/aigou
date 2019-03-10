@@ -3,12 +3,14 @@ package cn.itsource.aigou.service;
 import cn.itsource.aigou.client.ProductEsClient;
 import cn.itsource.aigou.doc.ProductDoc;
 import cn.itsource.aigou.util.AjaxResult;
+import cn.itsource.aigou.util.PageList;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IProductEsService {
 
@@ -26,4 +28,7 @@ public interface IProductEsService {
 
     //查询一个
     ProductDoc findOne(Long id);
+
+
+    PageList<ProductDoc> queryProducts(Map<String,Object> params);
 }

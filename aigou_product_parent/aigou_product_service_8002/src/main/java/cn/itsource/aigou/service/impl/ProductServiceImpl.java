@@ -270,6 +270,8 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
 
     }
 
+
+
     /**
      * @param proId         属性的id
      * @param value         属性的value
@@ -312,5 +314,12 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
             }
         }
         return null;
+    }
+
+
+    @Override
+    public PageList<ProductDoc> queryProductFromEs(Map<String, Object> parmas) {
+        //调用es的接口进行
+        return productEsClient.queryProducts(parmas);
     }
 }

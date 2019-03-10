@@ -2,10 +2,12 @@ package cn.itsource.aigou.client;
 
 import cn.itsource.aigou.doc.ProductDoc;
 import cn.itsource.aigou.util.AjaxResult;
+import cn.itsource.aigou.util.PageList;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @FeignClient(value = "COMMON-PRIVODER",fallbackFactory = ProductEsClientFactory.class) //表示对哪一个服务进行处理
 @RequestMapping("/common/es")
@@ -30,7 +32,9 @@ public interface ProductEsClient {
     @RequestMapping(value = "/productdoc/{id}", method = RequestMethod.GET)
     AjaxResult findOne(@PathVariable("id") Long id  );
 
-    //高级查询 TODO
+    //高级查询
+    @RequestMapping(value = "/queryProducts", method = RequestMethod.POST)
+    PageList<ProductDoc> queryProducts(@RequestBody Map<String,Object> params);
 
 
 }

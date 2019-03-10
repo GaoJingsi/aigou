@@ -1,5 +1,6 @@
 package cn.itsource.aigou.controller;
 
+import cn.itsource.aigou.doc.ProductDoc;
 import cn.itsource.aigou.domain.ProductExt;
 import cn.itsource.aigou.domain.Specification;
 import cn.itsource.aigou.service.IProductExtService;
@@ -14,6 +15,7 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -260,7 +262,6 @@ public class ProductController {
                 } else if (opt == 2) {
                     productService.offSale(ids,opt);
                 }
-
                 return AjaxResult.me().setSuccess(true).setMsg("上下架成功");
             } catch (NumberFormatException e) {
                 e.printStackTrace();
@@ -270,6 +271,28 @@ public class ProductController {
         } else {
             return AjaxResult.me().setSuccess(false).setMsg("请传入正确请求参数");
         }
+
+    }
+
+    //商品高级查询:"/product/product/queryProducts",this.queryParams)
+
+    /**
+     * 品牌,分类,价格:最高价和最低价,排序的字段,和排序的方式,查询关键字
+     "keyword":'',
+     "productType":null,
+     "brandId":null,
+     "priceMin":null,
+     "priceMax":null,
+     "sortField":'',
+     "sortType":"desc",
+     "page":1,
+     "rows":12
+     * @param parmas
+     */
+    @RequestMapping(value = "/queryProducts",method = RequestMethod.POST)
+    public PageList<ProductDoc>  queryProductFromEs(@RequestBody Map<String,Object> parmas){
+        //调用es的查询
+      return   productService.queryProductFromEs(parmas);
 
     }
 }

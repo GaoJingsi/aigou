@@ -1,5 +1,6 @@
 package cn.itsource.aigou.service;
 
+import cn.itsource.aigou.doc.ProductDoc;
 import cn.itsource.aigou.domain.Product;
 import cn.itsource.aigou.query.ProductQuery;
 import cn.itsource.aigou.util.PageList;
@@ -41,4 +42,6 @@ public interface IProductService extends IService<Product> {
      * @param opt 2
      */
     void offSale(String ids, Long opt);
+
+    PageList<ProductDoc> queryProductFromEs(Map<String, Object> parmas);
 }
